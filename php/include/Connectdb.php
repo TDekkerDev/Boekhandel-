@@ -1,6 +1,6 @@
 <?php 
 $host = 'localhost'; 
-$dbname = 'social_site'; 
+$dbname = 'boekhandel'; 
 $username = 'root'; 
 $password = ''; 
 $connectStr = 'mysql:host=' . $host . ';dbname=' . $dbname . ';charset=utf8'; 

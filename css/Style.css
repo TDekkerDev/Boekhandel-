@@ -1,3 +1,6 @@
+#MainIndexText{
+    text-align: center;
+}
 .Persoon1{
     text-align: center;
 }
@@ -8,4 +11,16 @@
     height: 15%;
     width: 15%;
     border-radius: 100%;
+    width: 13%;
+}
+
+.PersoonText{
+    font-size: 25px;
+    width: 60%;
+    
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
