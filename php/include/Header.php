@@ -10,3 +10,11 @@
     <title>Boekhandel</title>
 </head>
 <body>
+<?php
+$boek = array();
+if (isset($_COOKIE['shopingcard'])) {
+    echo "Cookies are enabled.";
+} else {
+    setcookie('shopingcard', json_encode($boek));
+}
+?>

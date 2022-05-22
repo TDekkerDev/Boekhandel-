@@ -1,7 +1,8 @@
 <?php include "php/include/Header.php"; ?>
 <?php include "php/include/Navbar.php"; ?>
+<br>
+<br>
 <div class="MainIndex">
-
     <h1 id = "MainIndexText">BoekenHandel<h1>
         <br>
         <br>

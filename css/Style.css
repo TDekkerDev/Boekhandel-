@@ -19,8 +19,22 @@
     width: 60%;
     
 }
-.navbar{
+.navvv{
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.shopmain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+
+}
+.shop{
+    text-align: center;
+    margin: 5%;
+    width: 10%;
+    height:30%;
+    border: solid 2px #cecece ;
 }
