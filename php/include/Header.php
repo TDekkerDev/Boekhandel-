@@ -7,10 +7,12 @@
     <meta name="theme-color" content="#FF5733">
     <link rel="stylesheet" href="/css/Style.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/Chatbox.css">
     <title>Boekhandel</title>
 </head>
 <body>
 <?php
+session_start();
 $boek = array();
 if (isset($_COOKIE['shopingcard'])) {
     echo "Cookies are enabled.";

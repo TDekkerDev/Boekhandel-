@@ -1,0 +1,38 @@
+.Chatbox-group{
+    display: flex;
+    width: 500px;
+    height: 340px;
+    border: 3px solid;
+    border-color:rgb(133, 133, 133) ;
+}
+
+.chatboxForm{
+    margin: auto;
+    padding: auto;
+}
+.chatboxUser{
+    padding: auto;
+    margin: auto;
+    border: 1px solid;
+    border-color:rgb(83, 83, 83) ;
+    width: 200px;
+    height: 320px;
+}
+
+.chatboxAdmin{
+    padding: auto;
+    margin: auto;
+    border: 1px solid;
+    border-color:rgb(83, 83, 83) ;
+    width: 200px;
+    height: 320px;
+}
+
+.boxxx{
+    border: 1px solid;
+    border-color:rgb(0, 0, 0) ;
+}
+
+.admin{
+    color:rgb(255, 0, 0);
+}

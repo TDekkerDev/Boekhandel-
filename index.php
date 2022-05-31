@@ -2,6 +2,8 @@
 <?php include "php/include/Navbar.php"; ?>
 <br>
 <br>
+<br>
+<?php include "php/include/ChatBoxLogin.php"; ?>
 <div class="MainIndex">
     <h1 id = "MainIndexText">BoekenHandel<h1>
         <br>
