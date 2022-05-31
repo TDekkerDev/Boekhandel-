@@ -1,3 +1,5 @@
+<?php
+?>
 <div class="Chatbox-group">
         <div class="chatboxUser">
             <div class="chatboxForm">
@@ -22,11 +24,11 @@
         </div>
         <div class="chatboxAdmin">
             <div class="chatboxForm">
-                <form>
+                <form method="post" action="/php/ChatBox/AdminLogin.php">
                     <br><br><br>
-                    <input type="text" name="chatboxAdminEmail" placeholder="Email">
+                    <input type="text" name="uname" placeholder="Email">
                     <br><br>
-                    <input type="password" name="chatboxAdminpassword" placeholder="password">
+                    <input type="password" name="password" placeholder="password">
                     <br><br>
                     <input type="submit" name="chatboxAdminVerstuur" value="Verstuur">
                 </form>

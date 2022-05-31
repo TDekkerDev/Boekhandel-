@@ -20,3 +20,4 @@ if (isset($_COOKIE['shopingcard'])) {
     setcookie('shopingcard', json_encode($boek));
 }
 ?>
+<div>

@@ -12,7 +12,7 @@ setInterval(function(){
 setInterval(function(){
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {
-    document.getElementById("text1").innerHTML = this.responseText;
+    document.getElementsByClassName("text1").innerHTML = this.responseText;
     }
     xmlhttp.open("GET", "AdminOnderwater.php");
     xmlhttp.send();

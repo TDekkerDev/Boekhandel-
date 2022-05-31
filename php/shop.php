@@ -1,6 +1,7 @@
 <?php include "include/Header.php"; ?>
 <?php include "include/Navbar.php"; ?>
 <?php include "include/Connectdb.php"; ?>
+<?php include "include/ChatBoxLogin.php"; ?>
     <div class= "shopmain">
     <?php
     $sql = "SELECT * FROM `boeken` ORDER BY `boeken`.`rank` DESC"; 

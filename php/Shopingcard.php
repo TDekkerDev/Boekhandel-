@@ -1,6 +1,7 @@
 <?php include "include/Header.php"; ?>
 <?php include "include/Navbar.php"; ?>
 <?php include "include/Connectdb.php"; ?>
+<?php include "include/ChatBoxLogin.php"; ?>
 <style>
 table {
   font-family: arial, sans-serif;

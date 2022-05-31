@@ -1,6 +1,7 @@
 <?php include "include/Header.php"; ?>
 <?php include "include/Navbar.php"; ?>
 <?php include "include/Connectdb.php"; ?>
+<?php include "include/ChatBoxLogin.php"; ?>
 <?php
     $id = $_POST['id'];
     $sql = "SELECT * FROM `boeken` WHERE id = :id"; 
