@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php include "../include/Connectdb.php"; ?>
 <?php 
-    $chatboxid = $_GET["chatboxid"];
+    $chatboxid = $_GET["chatid"];
     $name = $_SESSION["name"];
 ?>
 <?php
@@ -21,6 +21,4 @@
                 }
             echo "<br><br>";
             ?>
-        
-        ?>
         </div>

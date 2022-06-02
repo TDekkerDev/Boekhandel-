@@ -1,4 +1,3 @@
-
 setInterval(function(){
     const xmlhttp = new XMLHttpRequest();
     xmlhttp.onload = function() {
@@ -9,20 +8,21 @@ setInterval(function(){
 }, 5000);
 
 
+let list = document.getElementsByClassName("text1")
+
 setInterval(function(){
-    const xmlhttp = new XMLHttpRequest();
-    xmlhttp.onload = function() {
-    document.getElementsByClassName("text1").innerHTML = this.responseText;
-    }
-    xmlhttp.open("GET", "AdminOnderwater.php");
-    xmlhttp.send();
+for( let i=0; i < list.length; i++) {
+    loadChat(list[i].dataset.id)
+}
 }, 5000);
 
+function loadChat(chatId) {
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function() {
+        document.getElementById("chat" + chatId).innerHTML = this.responseText;
+        }
+        xmlhttp.open("GET", "AdminOnderwater.php?chatid=" + chatId);
+        xmlhttp.send();
+    
+}
 
-// var input = document.getElementById("myInput");
-// input.addEventListener("keypress", function(event) {
-//   if (event.key === "Enter") {
-//     event.preventDefault();
-//     document.getElementById("myBtn").click();
-//   }
-// });

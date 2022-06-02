@@ -18,11 +18,10 @@
                 $sth->execute(); 
                 while($row = $sth->fetch()) {
                 echo "<br><br>";
-                echo $name ;
                 echo "<div class='chat'>";
                 echo "<div class='boxxx'>";
                 ?> 
-                <div class='text1' data-id="<?php echo $row['id']?>">;
+                <div class='text1' id="chat<?php echo $row['id']?>" data-id="<?php echo $row['id']?>">;
                 <?php
                 $sql1 = "SELECT * FROM `berichten` WHERE chatbox_id = :chatbox_id";
                 $sth1 = $db->prepare($sql1); 
