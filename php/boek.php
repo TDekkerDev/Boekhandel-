@@ -8,26 +8,25 @@
     $sth = $db->prepare($sql); 
     $sth->execute(['id' => $id]); 
     while($row = $sth->fetch()) { 
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-    echo "<br>";
-    echo $row["id"];
-    echo "<br>";
-    echo $row["Title"];
-    echo "<br>";
-    echo $row["Description"];
-    echo "<br>";
-    echo $row["rank"];
-    echo "<br>";
-    echo $row["Price"];
-    echo "<br>";
-    echo "<br>";
-    ?>
-    <img src="/media/img/steren/ster<?php echo $row["rank"]?>.png">
-    <form method="post" action="/php/AddShopingcard.php">
-        <input type="hidden" name="id" value="<?php echo $row["id"] ?>">
-        <input type="submit" class="btn btn-primary" value="+ winkelwaagen">
+        ?>
+
+        <br>
+        <br>
+        <br>
+        <div class="boeks-group">
+            <div class="boeks">
+                <h3> Title: <?php echo $row["Title"] ?></h3>
+                <img class="bookImg" src="/media/img/boeken/<?php echo $row["img"]?>.png">
+                <img class="SterImg" src="/media/img/steren/ster<?php echo $row["rank"]?>.png">
+                <p> Author: <?php echo $row["Author"] ?></p>
+                <p> Languages: <?php echo $row["Languages"] ?></p>
+                <p> Description: <?php echo $row["Description"] ?></p>
+                <p> Price: <?php echo $row["Price"] ?></p>
+                <form method="post" action="/php/AddShopingcard.php">
+                <input type="hidden" name="id" value="<?php echo $row["id"] ?>">
+                <input type="submit" class="btn btn-primary" value="+ winkelwaagen">
+            </div>
+        </div>
     </form>
     <?php } ?>
 <?php include "include/Footer.php"; ?>

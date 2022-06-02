@@ -1,3 +1,7 @@
+body{
+    background: #f6cd8b !important;
+}
+
 #MainIndexText{
     text-align: center;
 }
@@ -32,13 +36,27 @@
 
 }
 .shop{
+    background: #ffffff;
     text-align: center;
     margin: 5%;
     width: 10%;
     height:30%;
-    border: solid 2px #cecece ;
+    border: solid 2px #000000 ;
 }
-
-.chat{
-    
+.boeks-group{
+    display: flex;
+    justify-content: center;
+}
+.boeks{
+    background-color: #ffffff;
+    margin: 5%;
+    width: 714px;
+    height: 370px;
+    border: solid 2px #000000 ;
+}
+.bookImg{
+    float: right;
+}
+.SterImg{
+    width: 20%;
 }
