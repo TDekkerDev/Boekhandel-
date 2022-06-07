@@ -1,5 +1,9 @@
 <?php
-    include "../include/connectdb.php";
+    error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+
+
+    include "../include/Connectdb.php";
     $sql = "SELECT * FROM admin WHERE name=:name AND pass=:pass";
     $st = $db->prepare($sql);
     $st->execute([

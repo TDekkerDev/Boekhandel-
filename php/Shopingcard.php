@@ -31,9 +31,13 @@ $HowBoeken = count($boeken);
 $value = "?";
 $array_Boeken = array_fill(0, $HowBoeken, $value);
 $SubBoeken = implode(",", $array_Boeken);
+print_r($SubBoeken);
+echo "<br>";
+print_r($boeken);
 $sql = "SELECT * FROM boeken WHERE id IN ($SubBoeken)";
+echo $sql;
 $sth = $db->prepare($sql); 
-$sth->execute($boeken); 
+$sth->execute(array_values($boeken));
 $total = 0;
 while($row = $sth->fetch()) { 
     $total = $total + $row["Price"];

@@ -1,10 +1,6 @@
 <?php include "../include/Header.php"; ?>
 <?php include "../include/Navbar.php"; ?>
 <?php include "../include/Connectdb.php"; ?>
-<?php 
-    $chatboxid = $_SESSION["chatboxid"];
-    $name = $_SESSION["name"];
-?>
 <br><br><br>
 <br><br>
 <div class="chat1">
@@ -46,6 +42,10 @@
                     <input type="hidden" name="chatboxid" value="<?php echo $row['id'] ?>">
                     <input type="text" name="chatboxUserMessage" id="chatboxUserMessage" placeholder="Typ hier je bericht..." autofill="fals">
                     <input type="submit" name="chatboxUserVerstuur" id="chatboxUserVerstuur" value="Verstuur">
+                </form>
+                <form method="post" action="DellChat.php">
+                    <input type="hidden" name="chatboxid" value="<?php echo $row['id'] ?>">
+                    <input type="submit" name="chatboxUserVerstuur" id="chatboxUserVerstuur" value="dell">
                 </form>
                 </div>
             </div>

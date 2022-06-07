@@ -2,7 +2,6 @@
 <?php include "../include/Connectdb.php"; ?>
 <?php 
     $chatboxid = $_GET["chatid"];
-    $name = $_SESSION["name"];
 ?>
 <?php
                 $sql1 = "SELECT * FROM `berichten` WHERE chatbox_id = :chatbox_id";

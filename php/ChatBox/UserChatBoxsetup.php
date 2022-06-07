@@ -15,9 +15,9 @@ $stmt1 = $db->prepare($sql1);
 $stmt1->execute([':namee' => $name, ':email' => $email , ':tel' => $tell]);
 
 
-$sql2 = "SELECT * FROM user WHERE Namee = :namee";
+$sql2 = "SELECT * FROM user WHERE email = :email";
 $sth2 = $db->prepare($sql2); 
-$sth2->execute([":namee" => $name]); 
+$sth2->execute([":email" => $email]); 
 while($row2 = $sth2->fetch()) {
     $nnaamm = $row2['Namee'];
     $userid = $row2['id'];
