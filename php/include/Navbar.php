@@ -12,6 +12,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/php/shop.php">shop</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/php/top.php">top10</a>
+        </li>
       </ul>
     </div>
   </nav>
